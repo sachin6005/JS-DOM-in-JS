@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>
+                 FORM
+         </title>
+         <style>
+             div{
+                 margin-top: 8px;
+                 padding: 0%;
+             }
+             #submit{
+                 margin-top: 10px;
+                 margin-left: 100px;
+                 margin-right: auto;
+             }
+             .label{
+              margin-top: 6px;
+              margin-bottom: 6px;
+             }
+             .text-box{
+             width: 250px;
+             }
+             #register-form{
+                 width: 300px;
+                 background-color: coral;
+                 padding: 20px;
+                 margin: auto;
+             }
+             .box{
+                 width: 260px;
+                 border-style: solid;
+                 border-radius: 10px;
+                 border-color: chartreuse;
+             }
+         </style>
+         <script 
+                src="https://kit.fontawesome.com/c758d930e9.js" crossorigin="anonymous">
+        </script>
+         
+    </head>
+    <body style="background-color: darkgray; height: 100%;">
+        <h1 style="text-align: center;">Sign up</h1>
+          <form id="register-form">
+                 <div>
+                        <p class="label">Full name</p> 
+                        <input class="text-box" type="text" name="fullname" >
+                 </div>
+                 <div>
+                        <p class="label">Email ID</p>
+                        <input class="text-box" type="email" name="email" >
+                 </div>
+               
+                 <div>
+                       <p class="label">password</p>
+                       <input class="text-box" type="password" name="password" >
+                </div>
+                <div>
+                       <p class="label">confirm password</p>
+                       <input class="text-box" type="password" name="confirm password" >
+                </div>
+                <div>
+                       <p class="label">Mobile Number</p>
+                       <input class="text-box" type="tel" name="Mobile Number" >
+                </div>
+                <div>
+                       <p class="label">Gender</p>
+                       <input type="radio" name="male">male
+                       <input type="radio" name="female">female
+                       <input type="radio" name="others">others
+                </div>
+                <div>
+                       <p class="label">Security Questions</p>
+                       <select class="text-box" name="security questions" multiple >
+                       <option value="fav color">what is your favourite color</option>
+                       <option value="fav dish">what is your favourite dish</option>
+                       <option value="fav sports">what is your favourite sports</option>
+                    </select>
+                </div>
+                 <div>
+                     <textarea id="text-area" name="answers" cols="25" rows="4"></textarea>
+                 </div>
+               
+                 <div>
+                     <input type="checkbox" name="t&c" id="">
+                     <label class="label">I agree to all terms and conditions</label>
+                 </div>
+                
+                    <button id="submit" >Register<i class="fas fa-registered"></i></button>
+                
+              
+          </form>
+          <h2 id="countdown">10</h2>
+          <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
